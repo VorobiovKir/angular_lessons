@@ -1,0 +1,20 @@
+<section id="todoapp">
+    <h1>Todo lists</h1>
+        <header id="header">
+            <form id="todo-form" ng-submit="addNewList()">
+                <input id="new-todo" placeholder="Add name of new list" ng-model="listName" ng-disabled="saving" type="text">
+            </form>
+        </header>
+        <section id="main" ng-show="lists.length" ng-cloak>
+            <ul id="todo-list">
+                <li ng-repeat="list in lists track by $index">
+                    <div class="view">
+                        <label>{{list.name}}</label>
+                        <a class="view-list-btn" ui-sref="todo_list_detail({id: list.id})"></a>
+                        <button class="destroy" ng-click="deleteList($index)"></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <footer id="footer"></footer>
+</section>

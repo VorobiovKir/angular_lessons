@@ -1,0 +1,34 @@
+<div class="container auth login">
+    <h1 class="text-center">Sign In</h1>
+    <hr>
+    <div class="row">
+        <form name="loginForm" class="col-md-offset-3 col-md-6">
+            <div class="form-group">
+                <label for="logUsername">Username:</label>
+                <p class="form-field-errors"
+                   ng-show="loginForm.username.$error.username">Please enter
+                    correct username</p>
+                    <input type="text" ng-model="user.data.name"
+                           class="form-control" name="username"
+                           id="logUsername" placeholder="write here..."
+                           namevalidation required/>
+            </div>
+            <div class="form-group">
+                <label for="logPassword">Password:</label>
+                <input type="password" ng-model="user.data.password"
+                       class="form-control"
+                       id="logPassword" placeholder="password here..."
+                       required/>
+            </div>
+            <div class="btn-group" role="group" aria-label="btn">
+                <button type="button" ng-click="showUsername()"
+                        class="btn btn-info">Clear
+                </button>
+                <button type="button" class="btn btn-success">Submit</button>
+            </div>
+        </form>
+    </div>
+    <p class="text-center sign-link">If you haven't account, you can <a
+            ui-sref="register">Sign Up</a></p>
+
+</div>

@@ -1,0 +1,30 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form-field-errors {
+    color: #e56b6b;
+}
+
+/* Auth pages */
+
+.auth p.sign-link {
+    font: 400 14px 'Open Sans', Arial, Sans-Serif;
+    color: #727578;
+    padding-top: 10px;
+}
+
+.auth p.sign-link a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.auth form .btn-group {
+    width: 100%;
+}
+
+.auth form .btn-group button{
+    width: 50%;
+}

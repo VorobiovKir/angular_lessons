@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en" data-framework="angularjs" ng-app="todomvc">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}List of todo{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div ui-view></div>
+</body>
+
+<script src="{% static 'lib/angular/angular.js' %}"></script>
+<script src="{% static 'js/angular-ui-router.js' %}"></script>
+<script src="{% static 'lib/angular-resource/angular-resource.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'js/routes.js' %}"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+<script src="{% static 'js/controllers/todoListCtrl.js' %}"></script>
+<script src="{% static 'js/controllers/todoDetailCtrl.js' %}"></script>
+<script src="{% static 'js/services/todoStorage.js' %}"></script>
+<script src="{% static 'js/directives/todoEscape.js' %}"></script>
+<script src="{% static 'js/directives/todoFocus.js' %}"></script>
+</html>
+
+
+<!-- (^[a-z][a-z]{0,}.[a-z]{0,}_[a-z]{0,}[a-z]$)|(^[a-z][a-z]{0,}_[a-z]{0,}.[a-z]{0,}[a-z]$)
+
+(^[a-z]([a-z]+)|([a-z]*.[a-z]*)|([a-z]*_[a-z]*)|([a-z]*.[a-z]*_[a-z]*)|([a-z]*_[a-z]*.[a-z]*)[a-z]$)
+
+
+(^[a-z](([a-z]+)|([a-z]*[._][a-z]*)|([a-z]*.[a-z]*_[a-z]*)|([a-z]*_[a-z]*.[a-z]*))[a-z]$)
+(^[a-z](([a-z0-9]+)|([a-z0-9]*[._][a-z0-9]*)|([a-z0-9]*.[a-z0-9]*_[a-z0-9]*)|([a-z0-9]*_[a-z0-9]*.[a-z0-9]*))[a-z]$)
+
+(^[a-z](([a-z0-9])+|([a-z0-9]*[._][a-z0-9]*))[a-z]$)
+ -->

@@ -1,0 +1,32 @@
+{
+  "name": "test_angular",
+  "authors": [
+    "VorobiovKir <kvorobiov89@gmail.com>"
+  ],
+  "description": "angular project with rest",
+  "main": "project/client_site/index.html",
+  "moduleType": [],
+  "keywords": [
+    "project",
+    "angular",
+    "django",
+    "rest"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "angular-resource": "^1.5.3",
+    "angular-cookies": "^1.5.3"
+  }
+}
